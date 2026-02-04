@@ -53,3 +53,31 @@ Provide a reliable technical snapshot of Windows server security and configurati
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass `-File "Invoke-WindowsServerReadOnlyAudit.ps1"
 ```
+> Execution policy is not modified system-wide.
+
+📂 Output
+Reports are generated under:
+```makefile
+C:\Compliance\Audit\<RunId>\
+```
+
+Main artifacts:
+- audit_full.json
+- summary.html
+- transcript.txt
+- .sha256 files
+
+🌐 HTML Report
+- Modern and responsive UI
+- UTF-8 charset
+- Visual status indicators
+- Compatible with modern browsers
+
+⚠️ Notes
+- Run as Administrator for full visibility
+- Test in staging before production
+- AppLocker / WDAC may restrict some external commands
+
+📜 License
+- Internal / corporate use.
+- Adapt licensing according to organizational policy.
